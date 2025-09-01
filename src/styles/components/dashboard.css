@@ -1,0 +1,31 @@
+.dashboard {
+    display: flex;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+
+    &-aside {
+        --scrollbar-thumb-color: var(--color-white);
+
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-cyan-800);
+        max-width: var(--container-md);
+        border-right: 2px solid var(--color-cyan-800);
+    }
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        border-color: var(--color-cyan-800);
+        border-width: 1px 1px 1px 0;
+        border-top-right-radius: var(--radius-lg);
+        border-bottom-right-radius: var(--radius-lg);
+        padding: --spacing(4);
+    }
+}
+
+

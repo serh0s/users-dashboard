@@ -1,0 +1,20 @@
+.users {
+    flex-grow: 1;
+    padding: --spacing(2) --spacing(4);
+    overflow-y: auto;
+    height: 100%;
+
+    &-item {
+        list-style: none;
+        margin: 0 calc(--spacing(4) * -1);
+        padding: --spacing(2) --spacing(4);
+        border-radius: var(--radius-md);
+        color: var(--color-white);
+        cursor: pointer;
+
+        &.is-active,
+        &:hover {
+            background-color: var(--color-cyan-900);
+        }
+    }
+}
